@@ -6,10 +6,12 @@
 .nav-item a {
     padding: 30px;
     padding-top: 5px;
-    color: yellowgreen;
+    color: black;
+    text-decoration: none;
 }
-.nav-item a:visited {
-    color: red;
+.current-nav-item a {
+    color: hotpink;
+    font-weight: bold;
 }
 h1 {
     font-size: xx-large;
