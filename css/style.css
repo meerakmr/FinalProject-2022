@@ -1,4 +1,13 @@
+.skip {
+    position: absolute;
+    transform: translateY(-200%);
+    transition: transform 0.3s;
+}
+a:focus {
+    transform: translateY(0%);
+}
 .nav-links {
+    padding-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -12,8 +21,10 @@
 .current-nav-item a {
     color: hotpink;
     font-weight: bold;
+    text-decoration: underline;
 }
 h1 {
+    padding-top: 10px;
     font-size: xx-large;
     margin-bottom: 30px;
     text-align: center;
