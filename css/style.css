@@ -29,6 +29,60 @@ h1 {
     margin-bottom: 30px;
     text-align: center;
 }
-footer {
-    margin-top: 100px;
+p {
+    padding-bottom: 20px;
 }
+.gallery-indie img {
+    width: 100%;
+}
+.gallery-indie {
+    padding-top: 20px;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+    row-gap: 5%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.gallery-metal img {
+    width: 30%;
+}
+.gallery-metal {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    margin-top: 40%;
+}
+
+/* 
+we have the facts: https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Death_Cab_For_Cutie-We_Have_the_Facts_and_We%27re_Voting_Yes.jpg/220px-Death_Cab_For_Cutie-We_Have_the_Facts_and_We%27re_Voting_Yes.jpg
+airplanes: https://media.pitchfork.com/photos/5929be1dc0084474cd0c2e27/1:1/w_600/a101be9e.jpg
+transat: https://upload.wikimedia.org/wikipedia/en/e/e9/Transatlanticism.jpg
+plans: https://upload.wikimedia.org/wikipedia/en/b/b6/Death_Cab_For_Cutie_-_Plans.png
+narrow stairs: https://upload.wikimedia.org/wikipedia/en/c/c6/Narrow_stairs.jpg
+codes and keys: https://upload.wikimedia.org/wikipedia/en/5/5b/Codes_And_Keys_Death_Cab_For_Cutie.jpg
+kintsugi: https://upload.wikimedia.org/wikipedia/en/9/94/Death_Cab_For_Cutie_-_Kintsugi.jpg
+tyft: https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Tyftdeathcab.jpg/220px-Tyftdeathcab.jpg
+asphalt meadows: https://media.pitchfork.com/photos/627b1cf13ad2357aeadc920d/master/w_1280%2Cc_limit/death-cab-for-cutie-asphalt-meadows.jpg
+photo: https://upload.wikimedia.org/wikipedia/en/0/0d/DeathCabPhotoAlbum.jpg
+
+creatures: https://upload.wikimedia.org/wikipedia/en/e/e7/Motionless_in_white_creatures.jpg
+infamous: https://upload.wikimedia.org/wikipedia/en/d/da/Motionless_in_white_infamous.jpg
+reincarnate: https://upload.wikimedia.org/wikipedia/en/e/ea/Motionless_in_white_reincarnate.jpg
+graveyard shift: https://upload.wikimedia.org/wikipedia/en/8/88/GraveyardShift.jpg
+disguise: https://upload.wikimedia.org/wikipedia/en/b/b1/DisguiseMIWcover.jpg
+scoring the end of the world: https://i.scdn.co/image/ab67616d0000b2733528a891d36d16d760cda271
+
+every trick: https://upload.wikimedia.org/wikipedia/en/a/a2/EveryTrickintheBookcover.jpg
+silver scream: https://upload.wikimedia.org/wikipedia/en/b/bd/Ice_Nine_Kills_%E2%80%93_The_Silver_Scream.png
+horrorwood: https://upload.wikimedia.org/wikipedia/en/e/e9/The_Silver_Scream_2_Welcome_to_Horrorwood_Album_Artwork.jpg
+*/
