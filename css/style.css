@@ -36,6 +36,9 @@ p {
 .gallery-indie img {
     width: 100%;
 }
+.desc {
+    display: none;
+}
 .gallery-indie {
     padding-top: 20px;
     display: grid;
@@ -47,15 +50,21 @@ p {
     align-items: center;
     margin: auto;
 }
-.gallery-metal img {
+.album img {
+    width: 90%;
+}
+.gallery-metal a {
     width: 30%;
+    display: flex;
+    justify-content: center;
+    
 }
 .gallery-metal {
     padding-top: 20px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
-    width: 90%;
+    gap: 25px;
     justify-content: center;
     align-items: center;
 }
