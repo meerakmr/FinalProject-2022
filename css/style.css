@@ -30,7 +30,8 @@ h1 {
     text-align: center;
 }
 p {
-    padding-bottom: 20px;
+    padding: 20px;
+    text-align: center;
 }
 .gallery-indie img {
     width: 100%;
