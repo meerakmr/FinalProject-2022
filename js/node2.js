@@ -12,42 +12,42 @@ function displayDesc(desc, img) {
 }
 document.querySelector("#airplanes").addEventListener("click", function() {
     console.log("airplanes");
-    displayDesc(document.querySelector("#airplanes p"), document.querySelector("#airplanes img"));
+    displayDesc(document.querySelector("#airplanes h3"), document.querySelector("#airplanes img"));
 })
 document.querySelector("#facts").addEventListener("click", function() {
     console.log("facts");
-    displayDesc(document.querySelector("#facts p"), document.querySelector("#facts img"));
+    displayDesc(document.querySelector("#facts h3"), document.querySelector("#facts img"));
 
 })
 document.querySelector("#photoalbum").addEventListener("click", function() {
     console.log("photoalbum");
-    displayDesc(document.querySelector("#photoalbum p"), document.querySelector("#photoalbum img"));
+    displayDesc(document.querySelector("#photoalbum h3"), document.querySelector("#photoalbum img"));
 })
 document.querySelector("#transat").addEventListener("click", function() {
     console.log("transat");
-    displayDesc(document.querySelector("#transat p"), document.querySelector("#transat img"));
+    displayDesc(document.querySelector("#transat h3"), document.querySelector("#transat img"));
 })
 document.querySelector("#plans").addEventListener("click", function() {
     console.log("plans");
-    displayDesc(document.querySelector("#plans p"), document.querySelector("#plans img"));
+    displayDesc(document.querySelector("#plans h3"), document.querySelector("#plans img"));
 })
 document.querySelector("#stairs").addEventListener("click", function() {
     console.log("stairs");
-    displayDesc(document.querySelector("#stairs p"), document.querySelector("#stairs img"));
+    displayDesc(document.querySelector("#stairs h3"), document.querySelector("#stairs img"));
 })
 document.querySelector("#codes").addEventListener("click", function() {
     console.log("codes");
-    displayDesc(document.querySelector("#codes p"), document.querySelector("#codes img"));
+    displayDesc(document.querySelector("#codes h3"), document.querySelector("#codes img"));
 })
 document.querySelector("#kintsugi").addEventListener("click", function() {
     console.log("kintsugi");
-    displayDesc(document.querySelector("#kintsugi p"), document.querySelector("#kintsugi img"));
+    displayDesc(document.querySelector("#kintsugi h3"), document.querySelector("#kintsugi img"));
 })
 document.querySelector("#tyft").addEventListener("click", function() {
     console.log("tyft");
-    displayDesc(document.querySelector("#tyft p"), document.querySelector("#tyft img"));
+    displayDesc(document.querySelector("#tyft h3"), document.querySelector("#tyft img"));
 })
 document.querySelector("#asphalt").addEventListener("click", function() {
     console.log("asphalt");
-    displayDesc(document.querySelector("#asphalt p"), document.querySelector("#asphalt img"));
+    displayDesc(document.querySelector("#asphalt h3"), document.querySelector("#asphalt img"));
 })

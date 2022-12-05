@@ -46,8 +46,9 @@ h2 {
 }
 .band-links {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .band-link {
     width: 30%;
@@ -115,6 +116,11 @@ select {
 /* song rec form css above */
 
 /* image gallery css below */
+h3 {
+    padding: 20px 50px 20px 50px;
+    text-align: center;
+    font-size: 21px;
+}
 .desc {
     background-color: #DADFF7;
     display: none;
@@ -165,11 +171,15 @@ select {
 footer {
     color: #48339F;
     margin-top: 20%;
+    font-size: small;
 }
 
 @media only screen and (min-width: 481px) { /*tablets*/
     .band-intro {
         display: block;
+    }
+    .band-links {
+        flex-direction: row;
     }
 
     .gallery-indie {
