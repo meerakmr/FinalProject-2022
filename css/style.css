@@ -33,11 +33,12 @@ p {
     padding: 20px;
     text-align: center;
 }
-.gallery-indie img {
-    width: 100%;
-}
 .desc {
     display: none;
+}
+
+.gallery-indie img {
+    width: 100%;
 }
 .gallery-indie {
     padding-top: 20px;
@@ -50,10 +51,11 @@ p {
     align-items: center;
     margin: auto;
 }
-.album img {
+
+.gallery-metal div img {
     width: 90%;
 }
-.gallery-metal a {
+.gallery-metal div {
     width: 30%;
     display: flex;
     justify-content: center;

@@ -1,4 +1,6 @@
 // when you click on an album cover, description text will appear
+// Indie page
+
 document.querySelector("#airplanes").addEventListener("click", function() {
     console.log("airplanes");
     let desc = document.querySelector("#airplanes p");
