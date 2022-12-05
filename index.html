@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home - Meera's Music</title>
+</head>
+<body>
+    <header>
+        <div><a class="skip" href="#main">Skip to Main Content</a></div>
+        <nav>
+			<ul class="nav-links">
+                <li class="nav-item current-nav-item"><a href="index.html">Home</a></li>
+				<li class="nav-item"><a href="indie.html">Indie</a></li>
+				<li class="nav-item"><a href="metal.html">Metal</a></li>
+			</ul>
+		</nav>
+		<!-- The h1 is a semantic tag that aids accessibility -->
+		<h1>Meera's Music</h1>
+    </header>
+
+    <main id="main">
+        <p>
+            I love music. Use the navigation tabs to explore my favorite genres.
+        </p>
+        <br>
+        <p>
+            If you want to learn more about my favorite tunes, 
+            <a href="https://open.spotify.com/user/meerkato">follow me on Spotify</a> or 
+            send me song recommendations via the contact form below!
+        </p>
+        <br><br><br><br>
+        <form class="songrec">
+            <fieldset>
+                <legend>Recommend a Song to Me:</legend>
+                <div class="input-div">
+                    <label>
+                        Name: 
+                        <input type="text" name="name" id="name-input" placeholder="Jane Doe">
+                    </label>
+                </div>
+                <div class="input-div">
+                    <label>
+                        Email address: 
+                        <input type="email" name="email" id="email-input" placeholder="jane@gmail.com">
+                    </label>
+                </div>
+                <div class="input-div">
+                    <label>
+                        Genre of the song recommended: 
+                        <select id="genre-input">
+                            <option value="indie">Indie</option>
+                            <option value="metal">Metal</option>
+                            <option value="pop" selected>Pop</option>
+                            <option value="rock">Rock</option>
+                            <option value="folk">Folk</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="input-div">
+                    <label>
+                        Song title: 
+                        <input type="text" name="title" id="title-input" placeholder="A Thousand Miles">
+                    </label>
+                </div>
+                <div class="input-div">
+                    <label>
+                        Artist: 
+                        <input type="text" name="artist" id="artist-input" placeholder="Vanessa Carlton">
+                    </label>
+                </div>
+                <input type="submit" id="submit" value="Submit">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+		<p>Meera Kumar &copy; 2022</p>
+    </footer>
+    <!-- <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
+    <script src="js/node1.js"></script>
+</body>
+</html>

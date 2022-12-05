@@ -1,3 +1,6 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
 .skip {
     position: absolute;
     transform: translateY(-200%);
@@ -8,9 +11,11 @@ a:focus {
 }
 .nav-links {
     padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    background-color: #DADFF7;
 }
 .nav-item a {
     padding: 30px;
@@ -19,32 +24,90 @@ a:focus {
     text-decoration: none;
 }
 .current-nav-item a {
-    color: hotpink;
+    color: #48339F;
     font-weight: bold;
     text-decoration: underline;
 }
+/* nav css above */
+
 h1 {
-    padding-top: 10px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: xx-large;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-align: center;
+}
+h2 {
+    padding: 20px 50px 20px 50px;
+    color: #48339F;
+    font-size: 25px;
+    font-weight: bold;
 }
 p {
-    padding: 20px;
+    padding: 20px 50px 20px 50px;
     text-align: center;
+    font-size: 21px;
 }
-.desc {
+.band-intro {
     display: none;
 }
 
+/* song rec form css below */
+.songrec {
+    padding: 50px;
+    background-color:#DADFF7;
+    text-align: center;
+}
+.songrec legend {
+    font-size: x-large;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+.input-div {
+    text-align: left;
+    font-size: 21px;
+    padding: 15px;
+}
+input {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid black;
+    background-color: #DADFF7;
+}
+select {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid black;
+    background-color: #DADFF7;
+}
+#submit {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 5px 20px 5px 20px;
+    border: 2px solid black;
+    background-color: #DADFF7;
+}
+/* song rec form css above */
+
+/* image gallery css below */
+.desc {
+    background-color: #DADFF7;
+    display: none;
+}
+.under-album {
+    display: none;
+}
 .gallery-indie img {
     width: 100%;
 }
 .gallery-indie {
     padding-top: 20px;
+    padding-bottom: 310%;
     display: grid;
     width: 90%;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 80%;
     column-gap: 5%;
     row-gap: 5%;
     justify-content: center;
@@ -52,11 +115,16 @@ p {
     margin: auto;
 }
 
+.album {
+    display: flex;
+    flex-direction: column;
+}
+
 .gallery-metal div img {
-    width: 90%;
+    width: 100%;
 }
 .gallery-metal div {
-    width: 30%;
+    width: 80%;
     display: flex;
     justify-content: center;
     
@@ -66,16 +134,46 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
 }
 
 footer {
-    margin-top: 40%;
+    color: #48339F;
+    margin-top: 20%;
 }
 
+@media only screen and (min-width: 481px) { /*tablets*/
+    .band-intro {
+        display: block;
+    }
+
+    .gallery-indie {
+        grid-template-columns: 45% 45%;
+        padding-bottom: 40%;
+    }
+    .gallery-metal div {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1024px) { /*desktops etc*/
+    .under-album {
+        display: block;
+    }
+    .gallery-indie {
+        grid-template-columns: 30% 30% 30%;
+        padding-bottom: 10%;
+    }
+
+    .gallery-metal div {
+        width: 30%;
+    }
+}
 /* 
+Image sources
+
 we have the facts: https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Death_Cab_For_Cutie-We_Have_the_Facts_and_We%27re_Voting_Yes.jpg/220px-Death_Cab_For_Cutie-We_Have_the_Facts_and_We%27re_Voting_Yes.jpg
 airplanes: https://media.pitchfork.com/photos/5929be1dc0084474cd0c2e27/1:1/w_600/a101be9e.jpg
 transat: https://upload.wikimedia.org/wikipedia/en/e/e9/Transatlanticism.jpg
