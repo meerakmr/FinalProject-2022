@@ -121,6 +121,9 @@ h3 {
     text-align: center;
     font-size: 21px;
 }
+.album {
+    display: block;
+}
 .desc {
     background-color: #DADFF7;
     display: none;
@@ -144,7 +147,7 @@ h3 {
     margin: auto;
 }
 
-.album {
+.gallery-metal .album {
     display: flex;
     flex-direction: column;
 }
@@ -168,10 +171,11 @@ h3 {
     align-items: center;
 }
 
-h4 {
+footer p {
     color: #48339F;
     margin-top: 20%;
     text-align: center;
+    font-size: 14px;
 }
 
 @media only screen and (min-width: 481px) { /*tablets*/

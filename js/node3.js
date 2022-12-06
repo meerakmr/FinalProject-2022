@@ -10,40 +10,27 @@ function displayDesc(desc, img) {
         img.style.display = "none";
     }
 }
-document.querySelector("#creatures").addEventListener("click", function() {
-    console.log("creatures");
-    displayDesc(document.querySelector("#creatures p"), document.querySelector("#creatures img"));
-})
-document.querySelector("#infamous").addEventListener("click", function() {
-    console.log("infamous");
-    displayDesc(document.querySelector("#infamous p"), document.querySelector("#infamous img"));
-})
-document.querySelector("#reincarnate").addEventListener("click", function() {
-    console.log("reincarnate");
-    displayDesc(document.querySelector("#reincarnate p"), document.querySelector("#reincarnate img"));
-})
-document.querySelector("#graveshift").addEventListener("click", function() {
-    console.log("graveyard shift");
-    displayDesc(document.querySelector("#graveshift p"), document.querySelector("#graveshift img"));
-})
-document.querySelector("#disguise").addEventListener("click", function() {
-    console.log("disguise");
-    displayDesc(document.querySelector("#disguise p"), document.querySelector("#disguise img"));
-})
-document.querySelector("#steotw").addEventListener("click", function() {
-    console.log("steotw");
-    displayDesc(document.querySelector("#steotw p"), document.querySelector("#steotw img"));
-})
 
-document.querySelector("#etitb").addEventListener("click", function() {
-    console.log("etitb");
-    displayDesc(document.querySelector("#etitb p"), document.querySelector("#etitb img"));
-})
-document.querySelector("#silverscream").addEventListener("click", function() {
-    console.log("silver scream");
-    displayDesc(document.querySelector("#silverscream p"), document.querySelector("#silverscream img"));
-})
-document.querySelector("#horrorwood").addEventListener("click", function() {
-    console.log("horrorwood");
-    displayDesc(document.querySelector("#horrorwood p"), document.querySelector("#horrorwood img"));
+window.addEventListener("load", function() {
+    let albumList = document.querySelectorAll(".album");
+    for (let i = 0; i < albumList.length; i++) {
+        // make images tab-able
+        albumList[i].setAttribute("tabindex", "0");
+        
+        // add event listeners for click and keypress
+        let id = albumList[i].id;
+        let descp = document.querySelector("#" + id + " p");
+        let descimg = document.querySelector("#" + id + " img");
+
+        albumList[i].addEventListener("click", function() {
+            console.log(id);
+            displayDesc(descp, descimg);
+        })
+        albumList[i].addEventListener("keypress", function(e) {
+            if (e.key == 'Enter') {
+                console.log(id);
+                displayDesc(descp, descimg);
+            }
+        })
+    }
 })
