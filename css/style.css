@@ -113,6 +113,9 @@ select {
     border: 2px solid black;
     background-color: #DADFF7;
 }
+#hidden-submit {
+    display: none;
+}
 /* song rec form css above */
 
 /* image gallery css below */

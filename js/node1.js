@@ -18,4 +18,5 @@ function verify() {
     if (isNotEmpty(title.value) == false) {alert("No song title inputted."); return;}
     const artist = document.getElementById('artist-input');
     if (isNotEmpty(artist.value) == false) {alert("No artist name inputted."); return;}
+    document.getElementById('hidden-submit').click();
 }

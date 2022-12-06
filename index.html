@@ -33,7 +33,7 @@
             send me song recommendations via the contact form below!
         </p>
         <br><br><br><br>
-        <form class="songrec" onsubmit="verify()">
+        <form class="songrec" method="post" action="submit.php">
             <fieldset>
                 <legend>Recommend a Song to Me:</legend>
                 <div class="input-div">
@@ -51,7 +51,7 @@
                 <div class="input-div">
                     <label>
                         Genre of the song recommended: 
-                        <select id="genre-input">
+                        <select id="genre-input" name="genre">
                             <option value="indie">Indie</option>
                             <option value="metal">Metal</option>
                             <option value="pop" selected>Pop</option>
@@ -72,7 +72,8 @@
                         <input type="text" name="artist" id="artist-input" placeholder="Vanessa Carlton">
                     </label>
                 </div>
-                <input type="submit" id="submit" value="Submit">
+                <input type="button" id="submit" value="Submit" onclick="verify()">
+                <input type="submit" id="hidden-submit" value="HiddenSubmit">
             </fieldset>
         </form>
     </main>
