@@ -123,10 +123,14 @@ h3 {
 }
 .album {
     display: block;
+    max-height: 275px;
+    overflow: scroll;
+    margin-top: 20px;
 }
 .desc {
     background-color: #DADFF7;
     display: none;
+    height: 275px;
 }
 .under-album {
     display: none;
@@ -135,8 +139,8 @@ h3 {
     width: 100%;
 }
 .gallery-indie {
-    padding-top: 20px;
-    padding-bottom: 310%;
+    padding-top: 50px;
+    margin-bottom: 310%;
     display: grid;
     width: 90%;
     grid-template-columns: 80%;
@@ -148,8 +152,12 @@ h3 {
 }
 
 .gallery-metal .album {
+    max-height: 300px;
     display: flex;
     flex-direction: column;
+}
+.gallery-metal .desc {
+    height: 300px;
 }
 
 .gallery-metal div img {
@@ -179,6 +187,19 @@ footer p {
 }
 
 @media only screen and (min-width: 481px) { /*tablets*/
+    .album {
+        max-height: 337px;
+    }
+    .desc {
+        height: 337px;
+    }
+    .gallery-metal .album {
+        max-height: 370px;
+    }
+    .gallery-metal .desc {
+        height: 370px;
+    }
+
     .band-intro {
         display: block;
     }
@@ -188,7 +209,7 @@ footer p {
 
     .gallery-indie {
         grid-template-columns: 45% 45%;
-        padding-bottom: 40%;
+        margin-bottom: 40%;
     }
     .gallery-metal div {
         width: 45%;
@@ -196,12 +217,25 @@ footer p {
 }
 
 @media only screen and (min-width: 1024px) { /*desktops etc*/
+    .album {
+        max-height: 460px;
+    }
+    .desc {
+        height: 400px;
+    }
+    .gallery-metal .album {
+        max-height: 491px;
+    }
+    .gallery-metal .desc {
+        height: 491px;
+    }
+    
     .under-album {
         display: block;
     }
     .gallery-indie {
         grid-template-columns: 30% 30% 30%;
-        padding-bottom: 10%;
+        margin-bottom: 10%;
     }
 
     .gallery-metal div {
